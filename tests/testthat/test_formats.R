@@ -1,12 +1,16 @@
 
 context("Formats")
 
-test_format <- function(name, file_check = TRUE) {
+test_format <- function(name, file_check = TRUE, os_skip = NULL) {
 
   test_that(paste(name, "format"), {
 
     # don't run on cran because pandoc is required
     skip_on_cran()
+
+    # skip on os if requested
+    if (!is.null(os_skip))
+      skip_on_os(os_skip)
 
     # work in a temp directory
     dir <- tempfile()
@@ -39,6 +43,7 @@ test_format("acm_article")
 test_format("elsevier_article")
 test_format("jss_article")
 test_format("rjournal_article", file_check = FALSE)
+test_format("acs_article", os_skip = "windows")
 
 
 
