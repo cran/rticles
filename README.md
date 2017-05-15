@@ -13,21 +13,14 @@ If you wish to install the development version from GitHub you can do this:
 devtools::install_github("rstudio/rticles")
 ```
 
-#### Sandbox Version
-
-Prior to submitting **rticles** to CRAN a number of formats that were not passing tests on all platforms were removed from the package (we expect that these formats will be restored eventually once their authors arrange for the tests to pass). If you are an existing user of one of these **rticles** formats you can install the "sandbox" version of the package which retains these formats as follows:
-
-```r
-devtools::install_github("rstudio/rticles", ref = "sandbox")
-```
 
 ### Overview
 
-The **rticles** package provides a suite of custom [R Markdown](http://rmarkdown.rstudio.com) LaTeX formats and templates for varoius formats, including:
+The **rticles** package provides a suite of custom [R Markdown](http://rmarkdown.rstudio.com) LaTeX formats and templates for various formats, including:
 
 - [JSS](http://www.jstatsoft.org/) articles
 
-- [R Journal](http://journal.r-project.org/) articles
+- [R Journal](https://journal.r-project.org/) articles
 
 - [CTeX](http://ctex.org) documents
 
@@ -35,11 +28,15 @@ The **rticles** package provides a suite of custom [R Markdown](http://rmarkdown
 
 - [ACS](http://pubs.acs.org/) articles
 
+- [AMS](https://www.ametsoc.org/) articles
+
 - [Elsevier](https://www.elsevier.com) journal submissions
+
+- [AEA](https://www.aeaweb.org/journals/policies/templates) journal submissions
 
 Under the hood, LaTeX templates are used to ensure that documents conform precisely to submission standards. At the same time, composition and formatting can be done using lightweight [markdown](http://rmarkdown.rstudio.com/authoring_basics.html) syntax, and R code and its output can be seamlessly included using [knitr](http://yihui.name/knitr/).
 
-Using **rticles** has some prerequisites which are described below. You can get most of these pre-requisites automatically by installing the latest release of RStudio (instructions for using **rticles** without RStudio are also provided).
+Using **rticles** requires the prerequisites described below. You can get most of these automatically by installing the latest release of RStudio (instructions for using **rticles** without RStudio are also provided).
 
 ### Using rticles from RStudio
 
