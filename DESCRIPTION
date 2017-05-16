@@ -1,7 +1,7 @@
 Package: rticles
 Type: Package
 Title: Article Formats for R Markdown
-Version: 0.4
+Version: 0.4.1
 Authors@R: c(
   person("JJ", "Allaire", role = c("aut", "cre"), email = "jj@rstudio.com"),
   person(family = "R Foundation", role = c("aut", "cph")),
@@ -30,7 +30,7 @@ SystemRequirements: GNU make
 RoxygenNote: 6.0.1
 Suggests: testthat
 NeedsCompilation: no
-Packaged: 2017-05-15 13:53:19 UTC; jjallaire
+Packaged: 2017-05-16 18:03:33 UTC; jjallaire
 Author: JJ Allaire [aut, cre],
   R Foundation [aut, cph],
   Hadley Wickham [aut],
@@ -51,4 +51,4 @@ Author: JJ Allaire [aut, cre],
   Miao Yu [aut, cph]
 Maintainer: JJ Allaire <jj@rstudio.com>
 Repository: CRAN
-Date/Publication: 2017-05-15 14:03:57 UTC
+Date/Publication: 2017-05-16 19:06:09 UTC
