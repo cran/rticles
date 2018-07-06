@@ -16,6 +16,11 @@ knitr_fun <- function(name) utils::getFromNamespace(name, 'knitr')
 
 output_asis <- knitr_fun('output_asis')
 
+merge_list <- function(x, y) {
+  fun <- knitr_fun('merge_list')
+  fun(as.list(x), y)
+}
+
 #' Render a pandoc template.
 #'
 #' This is a hacky way to access the pandoc templating engine.
@@ -48,7 +53,7 @@ template_pandoc <- function(metadata, template, output, verbose = FALSE) {
 }
 
 
-# Call rmarkdown::pdf_documet and mark the return value as inheriting pdf_document
+# Call rmarkdown::pdf_document and mark the return value as inheriting pdf_document
 inherit_pdf_document <- function(...) {
   fmt <- rmarkdown::pdf_document(...)
   fmt$inherits <- "pdf_document"
