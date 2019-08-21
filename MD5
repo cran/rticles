@@ -1,6 +1,6 @@
-b11db110e1b94b9b3b65c5a3ccab19f0 *DESCRIPTION
+44b7b19150b7fd0998809b737dc23345 *DESCRIPTION
 691c033a4734dbbbd1e88f91150e254b *NAMESPACE
-b82eda45f7abd28753a7808be68c8e92 *NEWS.md
+e04bb26cb4509d2ed16348da49c86da1 *NEWS.md
 221ef874dd8095ad6118c5249b171247 *R/article.R
 dcc4844a9f25f3e807f6ebb6fdbbdf71 *R/copernicus_article.R
 23184c36d55dde5c8c72baa2ab4e4011 *R/ieee_article.R
@@ -9,7 +9,7 @@ dcc4844a9f25f3e807f6ebb6fdbbdf71 *R/copernicus_article.R
 64817a77e9db5e4fde2a820afbec8fb1 *R/rsos_article.R
 de4726c44f07f30f22bb28fdea57fc25 *R/rss_article.R
 e7ab5ad35b6464f284d0a7d10bd36f76 *R/utils.R
-c6536d1e209dd9cf06ccd4f742da8cad *README.md
+bcca6adc2442122cc2dd5172c1d9ebb4 *README.md
 d89df2bf998107f999b4df5f18217f91 *inst/rmarkdown/templates/acm_article/resources/template.tex
 177a3a509e5bac518b0e561c2a69e8f0 *inst/rmarkdown/templates/acm_article/skeleton/Makefile
 503b87cb1940fc11e823b4f6eef84e2f *inst/rmarkdown/templates/acm_article/skeleton/README.md
@@ -68,7 +68,7 @@ ab291a0c99b9cbaadf6db93583610dec *inst/rmarkdown/templates/biometrics_article/sk
 9b6be1fb76bbac84735074e86aafda3e *inst/rmarkdown/templates/biometrics_article/skeleton/skeleton.Rmd
 ddfde4b4eeb6e231e6ffde8a1eadb4a9 *inst/rmarkdown/templates/biometrics_article/template.yaml
 c61ceb16752a7a624eee11cf5f1d2b16 *inst/rmarkdown/templates/copernicus_article/resources/README_copernicus_package_5_3.txt
-c9f1187e956a0b2d5c911f002b4ad892 *inst/rmarkdown/templates/copernicus_article/resources/template.tex
+dcb6e1a8ae243c70c1458c738c156015 *inst/rmarkdown/templates/copernicus_article/resources/template.tex
 2a9311b7233b8575fdc82b7231927868 *inst/rmarkdown/templates/copernicus_article/skeleton/Nikolaus_Kopernikus.jpg
 195b64fc943aa9550129b5d6dca7d4f1 *inst/rmarkdown/templates/copernicus_article/skeleton/copernicus.bst
 e29c579f8c1ba96145631d0d59baede1 *inst/rmarkdown/templates/copernicus_article/skeleton/copernicus.cfg
@@ -134,7 +134,7 @@ ce7cd1bccda62df0b54bbd2966711cc0 *inst/rmarkdown/templates/mnras_article/skeleto
 b25761d4f20056a4b153473f365c62fc *inst/rmarkdown/templates/mnras_article/skeleton/references.bib
 c41b7b5e9bf900af9802fb59565fc35e *inst/rmarkdown/templates/mnras_article/skeleton/skeleton.Rmd
 38bb80a8806dabdfd8e8dbbac32e5ae7 *inst/rmarkdown/templates/mnras_article/template.yaml
-b3d448b9adf31265aac03eaa048774e0 *inst/rmarkdown/templates/peerj_article/resources/template.tex
+453388cb52f6c555bf907147604d6251 *inst/rmarkdown/templates/peerj_article/resources/template.tex
 56bb6a690d75a8e854ca7d7aa4959b78 *inst/rmarkdown/templates/peerj_article/skeleton/sample.bib
 c8ffb4fc6f7cbabe800ed9093f19d54a *inst/rmarkdown/templates/peerj_article/skeleton/skeleton.Rmd
 c1cf6d6fdce75d58ad1b8947a8f87391 *inst/rmarkdown/templates/peerj_article/skeleton/view.jpg
@@ -223,4 +223,4 @@ d681f753ba6ee0e4781414401e4d2296 *man/jss_article.Rd
 ac8d2b3dbbc4d0a4435f8caccfb5a6ed *man/rsos_article.Rd
 055d3dffaf65ee71c9b30f90ae13afe5 *man/rss_article.Rd
 69e8b5bd7153f6af3a7060cf439c76e4 *tests/test-all.R
-b32f8a61ea933ec95c3e7fa560f9677b *tests/testit/test-formats.R
+e3268018dbc3738bcb75305eeef785ae *tests/testit/test-formats.R
