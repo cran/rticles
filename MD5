@@ -1,7 +1,7 @@
-173cc4ce06d0ab569bcbb9e325a10f4c *DESCRIPTION
+ce5d4e8fe48643d5d6c31c12a4ac8ec2 *DESCRIPTION
 f227661da830b9c25aafbfef4b12ad3e *NAMESPACE
-cd28c298f711091973be3cc11fd4e163 *NEWS.md
-221ef874dd8095ad6118c5249b171247 *R/article.R
+e96e24ada137e7813fd92f64a6ef7f4b *NEWS.md
+05b4601cae9bed7d57185062d20687eb *R/article.R
 dcc4844a9f25f3e807f6ebb6fdbbdf71 *R/copernicus_article.R
 11dea500efca0fca7319aa3f7f75a440 *R/ieee_article.R
 37c9750e70611f823f84f9f50017bd45 *R/joss_article.R
@@ -154,16 +154,12 @@ db7b8426cf457c724a78d0440e2f210f *inst/rmarkdown/templates/plos_article/skeleton
 622aa5e1029850ef6bd2cd441a7df964 *inst/rmarkdown/templates/plos_article/skeleton/plos.csl
 354eb688d01722e852e4dc686c032d9f *inst/rmarkdown/templates/plos_article/skeleton/skeleton.Rmd
 4b499b24c88d0969e803c325a90b4e27 *inst/rmarkdown/templates/plos_article/template.yaml
-e9bc38715b8f64ed3b0d1fc4195ad8eb *inst/rmarkdown/templates/pnas_article/resources/pnas-new.cls
-ca3abbba1d5e6697eaf12fdd3b67b9c6 *inst/rmarkdown/templates/pnas_article/resources/pnas.csl
 4ae73dfc4b27729594fb852f7ea896e5 *inst/rmarkdown/templates/pnas_article/resources/template.tex
 055b0011ada189a74d05d81ef3ee5d28 *inst/rmarkdown/templates/pnas_article/skeleton/frog.png
-e9bc38715b8f64ed3b0d1fc4195ad8eb *inst/rmarkdown/templates/pnas_article/skeleton/pnas-new.cls
+57c15ddf09045c834d5fb6c8222ea080 *inst/rmarkdown/templates/pnas_article/skeleton/pnas-new.cls
 f71caf386e69a18f8e726effaf302f30 *inst/rmarkdown/templates/pnas_article/skeleton/pnas-sample.bib
 ca3abbba1d5e6697eaf12fdd3b67b9c6 *inst/rmarkdown/templates/pnas_article/skeleton/pnas.csl
-4258791aef800268768382e0b8e909b8 *inst/rmarkdown/templates/pnas_article/skeleton/pnasinvited.sty
-c62dd13d4d26e63a49cd175f2df637d2 *inst/rmarkdown/templates/pnas_article/skeleton/pnasmathematics.sty
-829ef98c1ca7bbe95e9c70dab5b29224 *inst/rmarkdown/templates/pnas_article/skeleton/pnasresearcharticle.sty
+7aec1205c12893a1c87d36790c959b86 *inst/rmarkdown/templates/pnas_article/skeleton/pnasresearcharticle.sty
 bd19da3dfdc85319e018164d75f1c002 *inst/rmarkdown/templates/pnas_article/skeleton/skeleton.Rmd
 c068c9ac21e70c41ab7b2d63e4ccef47 *inst/rmarkdown/templates/pnas_article/skeleton/widetext.sty
 f152a132cc6cee2c9f3aae54f22d6dd3 *inst/rmarkdown/templates/pnas_article/template.yaml
@@ -223,7 +219,7 @@ ec91c6ce5a31f91ccd044b26c61f9d4b *inst/rmarkdown/templates/tf_article/skeleton/i
 410b2ad4afc997f467483039e2448fdb *inst/rmarkdown/templates/tf_article/skeleton/skeleton.Rmd
 3057ec2436759a004a28963f51e79234 *inst/rmarkdown/templates/tf_article/skeleton/tfcad.bst
 56b557fdd973c8b6e25db683999bf927 *inst/rmarkdown/templates/tf_article/template.yaml
-bdfe0c3afaf7e2a07b9bbbbb679e8c1f *man/article.Rd
+05d2d35cc9ab625474bd8a5eb92fb510 *man/article.Rd
 16de1ec5c5f641138d736c528584ccb7 *man/copernicus_article.Rd
 baf9078705f5e8aa26d8a18a81830c5b *man/ieee_article.Rd
 7030f5eea423093e3e2904373e4ac673 *man/joss_article.Rd
@@ -232,4 +228,4 @@ d681f753ba6ee0e4781414401e4d2296 *man/jss_article.Rd
 ac8d2b3dbbc4d0a4435f8caccfb5a6ed *man/rsos_article.Rd
 055d3dffaf65ee71c9b30f90ae13afe5 *man/rss_article.Rd
 69e8b5bd7153f6af3a7060cf439c76e4 *tests/test-all.R
-507df7e23591af8808b21297ef9b170e *tests/testit/test-formats.R
+5c5dcf1c52266c8b564da30d1d900bcc *tests/testit/test-formats.R
