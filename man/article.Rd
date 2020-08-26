@@ -8,7 +8,10 @@
 \alias{amq_article}
 \alias{ams_article}
 \alias{asa_article}
+\alias{arxiv_article}
+\alias{bioinformatics_article}
 \alias{biometrics_article}
+\alias{ctex_article}
 \alias{ctex}
 \alias{elsevier_article}
 \alias{frontiers_article}
@@ -55,7 +58,13 @@ ams_article(..., keep_tex = TRUE, md_extensions = c("-autolink_bare_uris"))
 
 asa_article(..., keep_tex = TRUE, citation_package = "natbib")
 
+arxiv_article(..., keep_tex = TRUE)
+
+bioinformatics_article(..., keep_tex = TRUE, citation_package = "natbib")
+
 biometrics_article(..., keep_tex = TRUE, citation_package = "natbib")
+
+ctex_article(..., latex_engine = "xelatex")
 
 ctex(..., latex_engine = "xelatex")
 
@@ -71,12 +80,7 @@ mdpi_article(..., keep_tex = TRUE)
 
 mnras_article(..., keep_tex = TRUE, fig_caption = TRUE)
 
-oup_article(
-  ...,
-  citation_package = "natbib",
-  keep_tex = TRUE,
-  md_extensions = c("-autolink_bare_uris")
-)
+oup_article(..., keep_tex = TRUE, md_extensions = c("-autolink_bare_uris"))
 
 peerj_article(..., keep_tex = TRUE)
 
@@ -110,13 +114,13 @@ custom Pandoc LaTeX template and different default values for other arguments
 \section{\code{acm_article}}{
  Format for creating an Association for Computing
   Machinery (ACM) articles. Adapted from
-  \url{http://www.acm.org/publications/article-templates/proceedings-template.html}.
+  \url{https://www.acm.org/publications/proceedings-template}.
 }
 
 \section{\code{acs_article}}{
  Format for creating an American Chemical Society
   (ACS) Journal articles. Adapted from
-  \url{http://pubs.acs.org/page/4authors/submission/tex.html}.
+  \url{https://pubs.acs.org/page/4authors/submission/tex.html}.
 }
 
 \section{\code{aea_article}}{
@@ -127,7 +131,7 @@ custom Pandoc LaTeX template and different default values for other arguments
 \section{\code{agu_article}}{
  Format for creating a American Geophysical Union
   (AGU) article. Adapted from
-  \url{https://publications.agu.org/author-resource-center/checklists-and-templates/}.
+  \url{https://www.agu.org/Publish-with-AGU/Publish/#1}.
 }
 
 \section{\code{amq_article}}{
@@ -147,16 +151,28 @@ custom Pandoc LaTeX template and different default values for other arguments
   American Statistical Association (ASA) journals.
 }
 
+\section{\code{arxiv_article}}{
+ Adapted from the George Kour's format for
+  arXiv and bio-arXiv preprints. So far as I'm aware, entirely
+  unofficial but still a staple.
+}
+
+\section{\code{bioinformatics_article}}{
+ Format for creating submissions to a Bioinformatics journal. Adapted from
+\url{https://academic.oup.com/bioinformatics/pages/submission_online}.
+}
+
 \section{\code{biometrics_article}}{
  This format was adapted from the
   Biometrics journal.
 }
 
-\section{\code{ctex}}{
- A wrapper function for \code{rmarkdown::pdf_document()}
-  and changed the default values of two arguments \code{template} and
-  \code{latex_engine} so it works better for typesetting Chinese documents
-  with the \pkg{ctex} LaTeX package.
+\section{\code{ctex_article}}{
+ A wrapper function for
+  \code{rmarkdown::pdf_document()} and the default value of
+  \code{latex_engine} is changed to \command{xelatex}, so it works better for
+  typesetting Chinese documents with the LaTeX package \pkg{ctex}. The
+  function \code{ctex} is an alias of \code{ctex_article}.
 }
 
 \section{\code{elsevier_article}}{
@@ -168,19 +184,19 @@ custom Pandoc LaTeX template and different default values for other arguments
 \section{\code{frontiers_article}}{
  Format for creating Frontiers journal
   articles. Adapted from
-  \url{http://home.frontiersin.org/about/author-guidelines}.
+  \url{https://www.frontiersin.org/about/author-guidelines}.
 }
 
 \section{\code{mdpi_article}}{
  Format for creating submissions to
   Multidisciplinary Digital Publishing Institute (MDPI) journals. Adapted
-  from \url{http://www.mdpi.com/authors/latex}.
+  from \url{https://www.mdpi.com/authors/latex}.
 }
 
 \section{\code{mnras_article}}{
  Format for creating an Monthly Notices of
   Royal Astronomical Society (MNRAS) Journal articles. Adapted from
-  \url{https://www.ras.org.uk/news-and-press/2641-new-version-of-the-mnras-latex-package}.
+  \url{https://ras.ac.uk}.
 }
 
 \section{\code{oup_article}}{
@@ -199,7 +215,7 @@ custom Pandoc LaTeX template and different default values for other arguments
 
 \section{\code{plos_article}}{
  Format for creating submissions to PLOS
-  journals. Adapted from \url{http://journals.plos.org/ploscompbiol/s/latex}.
+  journals. Adapted from \url{https://journals.plos.org/ploscompbiol/s/latex}.
 }
 
 \section{\code{pnas_article}}{
@@ -258,11 +274,11 @@ Possible arguments for the YAML header are:
 
 \section{\code{tf_article}}{
  Format for creating submissions to a Taylor & Francis journal. Adapted from
-\url{http://www.tandf.co.uk/journals/authors/InteractCADLaTeX.zip}.
+\url{https://www.tandf.co.uk/journals/authors/InteractCADLaTeX.zip}.
 }
 
 \examples{
 \dontrun{
-rmarkdown::draft("MyArticle.Rmd", template = "acm_article", package = "rticles")
-rmarkdown::draft("MyArticle.Rmd", template = "asa_article", package = "rticles")}
+rmarkdown::draft("MyArticle.Rmd", template = "acm", package = "rticles")
+rmarkdown::draft("MyArticle.Rmd", template = "asa", package = "rticles")}
 }
