@@ -1,16 +1,15 @@
-7835ef8e0beef86e7580e18ecf8d94a5 *DESCRIPTION
+4173c62ffb8e0cc63774138be2e1b6e1 *DESCRIPTION
 fd464b5b4162d358627bf8eabe688674 *NAMESPACE
-1e1f84fef3d2cbdd27ece3e03911026b *NEWS.md
-ca3ad22782b78e7f6192856c2bf27508 *R/article.R
+b86269b985b55653e98c3b964251dfb3 *NEWS.md
+924e9bc69a1e8f4a3f5955f96c30bb8b *R/article.R
 947be9fbddaf337f9d923c27c216fb44 *R/copernicus_article.R
 b8d1da695daaa2b723549b2a27e5bc6b *R/ieee_article.R
 fec5eb7d3d6e19309be93c56313755b3 *R/joss_article.R
-0bee1ddc30390e9df1214cbeda29e1ef *R/jss_article.R
-3ff3a22e57226951760889232efb1d77 *R/rjournal_article.R
+24cc00d9bf00d99a08944590c11fbf29 *R/jss_article.R
+f12ba04f9eea8b77e1e5eb9676d1219e *R/rjournal_article.R
 76b7cb8abe3382ad4535014283894dce *R/rsos_article.R
 9bf3bd1d422da1b21892f47e9e18e517 *R/rss_article.R
 c7f13eae39480e136cf45eebd0300bd4 *R/utils.R
-7e7bf43932bba315921c02c280c7a8c8 *README.md
 82b4d0226bc60df7d0b22e60726fb70b *inst/rmarkdown/lua/short-title.lua
 bba076c92a94645818232cf814ca206a *inst/rmarkdown/templates/acm/resources/template.tex
 177a3a509e5bac518b0e561c2a69e8f0 *inst/rmarkdown/templates/acm/skeleton/Makefile
@@ -92,7 +91,7 @@ d6a2b35e90cb9bf35e556ca57bc8f6c7 *inst/rmarkdown/templates/copernicus/skeleton/c
 801069dbda1161fb9a5185d609ddf2ca *inst/rmarkdown/templates/copernicus/skeleton/sample.bib
 0fd65c0520332ae7a3a14df9b51819e7 *inst/rmarkdown/templates/copernicus/skeleton/skeleton.Rmd
 61c0fe379b3331182ce9c94996bdf3d9 *inst/rmarkdown/templates/copernicus/template.yaml
-d43b01010cd1b8858ae5d13848f408f1 *inst/rmarkdown/templates/ctex/skeleton/skeleton.Rmd
+3c2b54d72f0182c1e8c491c9fd7c8016 *inst/rmarkdown/templates/ctex/skeleton/skeleton.Rmd
 c7fdabcd88ed31b6836cc7d4e0e1e264 *inst/rmarkdown/templates/ctex/template.yaml
 5b80b57ac5b7aafdcf8498e8fb6f2b0b *inst/rmarkdown/templates/elsevier/resources/template.tex
 831d8781b8dc4724eb0e8e615a458938 *inst/rmarkdown/templates/elsevier/skeleton/elsarticle.cls
@@ -132,7 +131,7 @@ fc6abdef201777bc6e95e9ef65b5d19d *inst/rmarkdown/templates/joss/skeleton/skeleto
 9e13367ef4850e3c0d4fa27c607e2137 *inst/rmarkdown/templates/jss/skeleton/jss.bst
 4d890e205f4c9db08835f10b6bb3febd *inst/rmarkdown/templates/jss/skeleton/jss.cls
 b9564ddd59a06782310989e8f33db55e *inst/rmarkdown/templates/jss/skeleton/jsslogo.jpg
-d569e9e0423db0913781d26301f0213c *inst/rmarkdown/templates/jss/skeleton/skeleton.Rmd
+a4cd9cb3d5bd9ad2aa37fdcc8920c42f *inst/rmarkdown/templates/jss/skeleton/skeleton.Rmd
 a8029c29d3ff21e6dcca3832b14bf6aa *inst/rmarkdown/templates/jss/template.yaml
 3122654d189fe6feefc801c054043e2a *inst/rmarkdown/templates/mdpi/resources/template.tex
 c77f974f0cc826e58bf05024a0c5ddd1 *inst/rmarkdown/templates/mdpi/skeleton/appendix.tex
@@ -236,7 +235,7 @@ ec91c6ce5a31f91ccd044b26c61f9d4b *inst/rmarkdown/templates/tf/skeleton/interactc
 410b2ad4afc997f467483039e2448fdb *inst/rmarkdown/templates/tf/skeleton/skeleton.Rmd
 7b3b9629b673073d1058a41f94a8b77e *inst/rmarkdown/templates/tf/skeleton/tfcad.bst
 56b557fdd973c8b6e25db683999bf927 *inst/rmarkdown/templates/tf/template.yaml
-5d9c0669aa9731ff15e117eb285cb584 *man/article.Rd
+93a6276e5345dc0cb81d113efab80aa7 *man/article.Rd
 21a02fada35df0d0389164f775918d07 *man/copernicus_article.Rd
 479e9aa70746588e136ff00912ce7455 *man/ieee_article.Rd
 6a80ad82744b42f3794d80ce08412624 *man/joss_article.Rd
@@ -246,5 +245,5 @@ f0e2d939b9505b506dc1a2a57ed51f69 *man/jss_article.Rd
 16b460e74a60ecc40a5628869e7dc472 *man/rsos_article.Rd
 b38b7bc638fa6d65fd134dc3480a1d4b *man/rss_article.Rd
 69e8b5bd7153f6af3a7060cf439c76e4 *tests/test-all.R
-8721a7133b242b80a650e3e02d23c241 *tests/testit/test-formats.R
+163e6029626899e59ce0a639bfd9646d *tests/testit/test-formats.R
 899d5646e6a26e91e85e1c445a1fdf6e *tests/testit/test-utils.R

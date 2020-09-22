@@ -28,6 +28,7 @@ jss_article <- function(
   base$knitr$opts_chunk <- merge_list(base$knitr$opts_chunk, list(
     prompt = TRUE, comment = NA, highlight = FALSE, tidy = FALSE,
     dev.args = list(pointsize = 11), fig.align = "center",
+    R.options = list(prompt = 'R> ', continue = '+ '),
     fig.width = 4.9,  # 6.125" * 0.8, as in template
     fig.height = 3.675  # 4.9 * 3:4
   ))
@@ -48,31 +49,22 @@ jss_article <- function(
     )
   }
 
-  hook_chunk <- function(x, options) {
-    if (output_asis(x, options)) return(x)
-    paste0('```{=latex}\n\\begin{CodeChunk}\n', x, '\\end{CodeChunk}\n```')
-  }
-  hook_input <- function(x, options) {
-    if (length(x)) {
-      opts <- options(prompt = 'R> ', continue = '+ ')
-      on.exit(options(opts), add = TRUE)
-      x <- knitr:::hilight_source(x, 'sweave', options)
-    }
-    paste0(c('\n\\begin{CodeInput}', x, '\\end{CodeInput}', ''),
-      collapse = '\n')
-  }
-  hook_output <- function(x, options) {
-    paste0('\n\\begin{CodeOutput}\n', x, '\\end{CodeOutput}\n')
-  }
+  set_sweave_hooks(base, c('CodeInput', 'CodeOutput', 'CodeChunk'))
+}
 
-  base$knitr$knit_hooks <- merge_list(base$knitr$knit_hooks, list(
-    chunk   = hook_chunk,
-    source  = hook_input,
-    output  = hook_output,
-    message = hook_output,
-    warning = hook_output,
-    plot = knitr::hook_plot_tex
-  ))
+# wrap the content in a raw latex block
+latex_block <- function(hook) {
+  force(hook)
+  function(x, options) {
+    x2 <- hook(x, options)
+    if (identical(x, x2)) x else paste0('```{=latex}\n', x2, '\n```')
+  }
+}
 
+# use knitr's sweave hooks, but wrap chunk output in raw latex blocks
+set_sweave_hooks <- function(base, ...) {
+  hooks <- knitr::hooks_sweave(...)
+  hooks[['chunk']] <- latex_block(hooks[['chunk']])
+  base$knitr$knit_hooks <- merge_list(base$knitr$knit_hooks, hooks)
   base
 }
