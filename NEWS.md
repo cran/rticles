@@ -1,7 +1,15 @@
+rticles 0.19
+---------------------------------------------------------------------
+- Update Copernicus Publications template to version 6.2 from 2021-01-15 (thanks, @RLumSK, #366).
+
+- Add article template `pihph_article()` for the *Papers in Historical Phonology* (PiHPh) (thanks, @stefanocoretta, #362).
+
+- Add article template `ims_article()` for *Institute of Mathematical Statistics* Journals, e.g., *Annals of Applied Statistics* (thanks, @auzaheta, #372)
+
 rticles 0.18
 ---------------------------------------------------------------------
 
-- `springer_article()` now uses the yaml variable biblio-style to set bibliogrphy style
+- `springer_article()` now uses the yaml variable biblio-style to set bibliography style
 instead of bibstyle. (@eliocamp, #358)
 
 - Fixes a bug when rendering `arxiv_article()` with recent version of TeX Live by adding `\usepackage{lmodern}` to the template. (#thanks, @slemonide, #343)
@@ -16,6 +24,8 @@ instead of bibstyle. (@eliocamp, #358)
 fix for the LaTeX problem sanitized with the last `rticles` update (thanks, @RLumSK, #331).
 
 - Update all templates regarding CSLReference environment following changes in Pandoc's default template.
+
+- Add article template `jasa_article()` for the *Journal of the Acoustical Society of America* (JASA) (thanks, @stefanocoretta, #364)
 
 rticles 0.17
 ---------------------------------------------------------------------
