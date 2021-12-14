@@ -1,11 +1,11 @@
 Package: rticles
 Type: Package
 Title: Article Formats for R Markdown
-Version: 0.21
+Version: 0.22
 Authors@R: c(
   person("JJ", "Allaire", role = "aut", email = "jj@rstudio.com"),
-  person("Yihui", "Xie", role = c("aut", "cre"), email = "xie@yihui.name", comment = c(ORCID = "0000-0003-0645-5666")),
-  person("Christophe", "Dervieux", role = c("aut"), email = "cderv@rstudio.com", comment = c(ORCID = "0000-0003-4474-2498")),
+  person("Yihui", "Xie", role = c("aut"), email = "xie@yihui.name", comment = c(ORCID = "0000-0003-0645-5666")),
+  person("Christophe", "Dervieux", role = c("aut","cre"), email = "cderv@rstudio.com", comment = c(ORCID = "0000-0003-4474-2498")),
   person(family = "RStudio", role = c("cph", "fnd")),
   person(family = "R Foundation", role = c("aut", "cph")),
   person("Hadley", "Wickham", role = "aut", email = "hadley@rstudio.com"),
@@ -46,9 +46,11 @@ Authors@R: c(
   person('Jay', 'Hesselberth', role = c('aut', 'ctb'), email = 'jay.hesselberth@gmail.com', comment = c(ORCID = '0000-0002-6299-179X')),
   person("Alfredo", "Hernández", role = c("ctb"), email = "aldomann.designs@gmail.com", comment = c(ORCID = "0000-0002-2660-4545")),
   person("Stefano", "Coretta", role = c("ctb"), email = "stefano.coretta@gmail.com", comment = c(ORCID = "0000-0001-9627-5532", github = "stefanocoretta")),
+  person("Greg", "Macfarlane", role = c("ctb"), email = "gregmacfarlane@gmail.com", comment = c(github = "gregmacfarlane")),
   person("Matthias", "Templ", role = c("ctb"), email = "matthias.templ@gmail.com", comment = c(ORCID = "0000-0002-8638-5276", github = "matthias-da")),
   person("Alvaro", "Uzaheta", role = c("ctb"), email = "alvaro.uzaheta@gess.ethz.ch", comment = c(github = "auzaheta")),
-  person("JooYoung", "Seo", role=c("ctb"), email="jseo1005@illinois.edu", comment = c(ORCID = "0000-0002-4064-6012"))
+  person("JooYoung", "Seo", role=c("ctb"), email="jseo1005@illinois.edu", comment = c(ORCID = "0000-0002-4064-6012")),
+  person("Callum", "Arnold", role = c("ctb"), email = "cal.rk.arnold@gmail.com", comment = c(github = "arnold-c"))
   )
 Description: A suite of custom R Markdown formats and templates for
   authoring journal articles and conference submissions.
@@ -58,15 +60,18 @@ Imports: utils, rmarkdown (>= 2.5), knitr (>= 1.30), yaml, tinytex (>=
 SystemRequirements: GNU make
 URL: https://github.com/rstudio/rticles
 BugReports: https://github.com/rstudio/rticles/issues
-RoxygenNote: 7.1.1
-Suggests: testit, bookdown, xtable
+RoxygenNote: 7.1.2
+Suggests: testit, bookdown, xtable, testthat (>= 3.0.0)
 Encoding: UTF-8
-Config/Needs/website: magick, pdftools, gifski, rstudio/quillt
+Config/Needs/website: magick, pdftools, gifski, tidyverse/tidytemplate,
+        rstudio/quillt
+Config/testthat/edition: 3
 NeedsCompilation: no
-Packaged: 2021-09-10 16:38:39 UTC; yihui
+Packaged: 2021-12-13 15:11:21 UTC; chris
 Author: JJ Allaire [aut],
-  Yihui Xie [aut, cre] (<https://orcid.org/0000-0003-0645-5666>),
-  Christophe Dervieux [aut] (<https://orcid.org/0000-0003-4474-2498>),
+  Yihui Xie [aut] (<https://orcid.org/0000-0003-0645-5666>),
+  Christophe Dervieux [aut, cre]
+    (<https://orcid.org/0000-0003-4474-2498>),
   RStudio [cph, fnd],
   R Foundation [aut, cph],
   Hadley Wickham [aut],
@@ -111,10 +116,12 @@ Author: JJ Allaire [aut],
   Alfredo Hernández [ctb] (<https://orcid.org/0000-0002-2660-4545>),
   Stefano Coretta [ctb] (<https://orcid.org/0000-0001-9627-5532>,
     stefanocoretta),
+  Greg Macfarlane [ctb] (gregmacfarlane),
   Matthias Templ [ctb] (<https://orcid.org/0000-0002-8638-5276>,
     matthias-da),
   Alvaro Uzaheta [ctb] (auzaheta),
-  JooYoung Seo [ctb] (<https://orcid.org/0000-0002-4064-6012>)
-Maintainer: Yihui Xie <xie@yihui.name>
+  JooYoung Seo [ctb] (<https://orcid.org/0000-0002-4064-6012>),
+  Callum Arnold [ctb] (arnold-c)
+Maintainer: Christophe Dervieux <cderv@rstudio.com>
 Repository: CRAN
-Date/Publication: 2021-09-11 06:30:02 UTC
+Date/Publication: 2021-12-14 13:00:09 UTC
