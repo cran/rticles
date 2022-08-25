@@ -6,7 +6,7 @@
 \alias{rticles-package}
 \title{rticles: Article Formats for R Markdown}
 \description{
-\if{html}{\figure{logo.png}{options: align='right' alt='logo' width='120'}}
+\if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
 
 A suite of custom R Markdown formats and templates for authoring journal articles and conference submissions.
 }
@@ -47,7 +47,7 @@ Authors:
   \item Dominik Leutnant \email{leutnant@fh-muenster.de} (\href{https://orcid.org/0000-0003-3293-2315}{ORCID}) [copyright holder]
   \item  MDPI [copyright holder]
   \item  Taylor and Francis [copyright holder]
-  \item Oguzhan Ögreden (\href{https://orcid.org/0000-0002-9949-3348}{ORCID})
+  \item Oğuzhan Öğreden (\href{https://orcid.org/0000-0002-9949-3348}{ORCID})
   \item Dalton Hance \email{dhance@usgs.gov}
   \item Daniel Nüst \email{daniel.nuest@uni-muenster.de} (\href{https://orcid.org/0000-0002-0024-5046}{ORCID}) [copyright holder]
   \item Petter Uvesten \email{petter.uvesten.7362@student.lu.se} [copyright holder]

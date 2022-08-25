@@ -91,8 +91,6 @@ $if(links-as-notes)$
 $endif$
 $if(strikeout)$
 \usepackage[normalem]{ulem}
-% avoid problems with \sout in headers with hyperref:
-\pdfstringdefDisableCommands{\renewcommand{\sout}{}}
 $endif$
 
 $if(numbersections)$
@@ -193,9 +191,9 @@ $endfor$
 
   \title{$title$}
   $for(author)$
-  \author[$author.affiliation$]{$author.name$$if(author.footnote)$%
+  \author[$author.affiliation$]{$author.name$%
   $if(author.correspondingauthor)$\corref{cor1}$endif$%
-  \fnref{$author.footnote$}$endif$}
+  $if(author.footnote)$\fnref{$author.footnote$}$endif$}
   $if(author.email)$ \ead{$author.email$} $endif$
   $endfor$
   $for(address)$

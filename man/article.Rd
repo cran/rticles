@@ -21,6 +21,7 @@
 \alias{iop_article}
 \alias{jasa_article}
 \alias{lipics_article}
+\alias{lncs_article}
 \alias{jedm_article}
 \alias{mdpi_article}
 \alias{mnras_article}
@@ -117,6 +118,8 @@ lipics_article(
   md_extensions = c("-autolink_bare_uris", "-auto_identifiers")
 )
 
+lncs_article(..., keep_tex = TRUE, citation_package = c("default", "natbib"))
+
 jedm_article(..., keep_tex = TRUE, citation_package = "natbib")
 
 mdpi_article(..., keep_tex = TRUE)
@@ -186,7 +189,7 @@ Machinery (ACM) articles. Adapted from
 \section{\code{acs_article}}{
  Format for creating an American Chemical Society
 (ACS) Journal articles. Adapted from
-\url{https://pubs.acs.org/page/4authors/submission/tex.html}.
+\verb{https://pubs.acs.org/page/4authors/submission/tex.html}
 }
 
 \section{\code{aea_article}}{
@@ -213,7 +216,7 @@ Society (AMS) Journal articles. Adapted from
 
 \section{\code{asa_article}}{
  This format was adapted from The American
-Statistican (TAS) format, but it should be fairly consistent across
+Statistician (TAS) format, but it should be fairly consistent across
 American Statistical Association (ASA) journals.
 }
 
@@ -307,6 +310,15 @@ with version tag v2019.2. The template is provided under The LaTeX
 Project Public License (LPPL), Version 1.3c.
 }
 
+\section{\code{lncs_article}}{
+ Format for creating submissions to
+LNCS - Lecture Notes in Computer Science - articles.
+Adapted from the official Instructions for Authors at
+\url{https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines}
+and the  template from the archive \code{LaTeX2e+Proceedings+Templates+download.zip} downloaded
+with version tag 2.21.
+}
+
 \section{\code{jedm_article}}{
  Format for creating Journal of Educational
 Data Mining (JEDM) articles. Adapted from
@@ -377,7 +389,7 @@ Possible arguments for the YAML header are:
 \section{\code{sim_article}}{
  Format for creating submissions to Statistics in
 Medicine. Based on the official Statistics in Medicine
-\href{http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)1097-0258/homepage/la_tex_class_file.htm}{class}.
+at \verb{https://onlinelibrary.wiley.com/page/journal/10970258/homepage/la_tex_class_file.htm}.
 
 Possible arguments for the YAML header are:
 \itemize{

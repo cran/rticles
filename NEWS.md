@@ -1,3 +1,29 @@
+# rticles 0.24
+
+## NEW FEATURES
+
+- New `lncs_article()` template for submissions to Lecture Notes in Computer Science (thanks, @eliocamp, #445).
+
+## BUG FIXES
+
+- Remove `\usepackage{utf8x}` usage by default in `plos_article()` TeX template as it conflicts with recent `latex2e`. As it is in the official PLS journal template, it is not removed completely but opt-out by default. Use `with_utf8x` pandoc variable in YAML to opt-in again if you want to deal with the conflict differently (thanks, @Sciurus365, #496).
+
+- Update `glossa_article()` and path template to opt-out using `microtype` to prevent issues. Add it back using `extra_dependencies` in YAML with adding a preamble if needed (thanks, @stefanocoretta, #487).
+
+- In `elsevier_article()`, corresponding author is correctly marked with a `*` even if no other footnote are set on the author.
+
+- `ams_article()` bundles `ametsoc.cls` now as **ametsoc** package is not more available on CTAN.
+
+- Nested code chunk in list are now correctly rendered in `jss_article()` (thanks, @nbenn, #476).
+
+## MINOR CHANGES
+
+- Update Copernicus Publications template to version 6.8 from 2022-03-28 (@RLumSK, #478, #479).
+
+- Update `rjournal_article()` template to match current style file. Package and task view macros use secure links, and the footer includes the year (@mitchelloharawild)
+
+- Updates to Pandoc's template following recent change with new Pandoc version in relevant templates.
+
 # rticles 0.23
 
 ## BREAKING CHANGE
