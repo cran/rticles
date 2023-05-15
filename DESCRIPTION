@@ -1,16 +1,16 @@
 Type: Package
 Package: rticles
 Title: Article Formats for R Markdown
-Version: 0.24
+Version: 0.25
 Authors@R: c(
-    person("JJ", "Allaire", , "jj@rstudio.com", role = "aut"),
+    person("JJ", "Allaire", , "jj@posit.co", role = "aut"),
     person("Yihui", "Xie", , "xie@yihui.name", role = "aut",
            comment = c(ORCID = "0000-0003-0645-5666")),
-    person("Christophe", "Dervieux", , "cderv@rstudio.com", role = c("aut", "cre"),
+    person("Christophe", "Dervieux", , "cderv@posit.co", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0003-4474-2498")),
-    person(, "RStudio", role = c("cph", "fnd")),
+    person(given = "Posit Software, PBC", role = c("cph", "fnd")),
     person(, "R Foundation", role = c("aut", "cph")),
-    person("Hadley", "Wickham", , "hadley@rstudio.com", role = "aut"),
+    person("Hadley", "Wickham", , "hadley@posit.co", role = "aut"),
     person(, "Journal of Statistical Software", role = c("aut", "cph")),
     person("Ramnath ", "Vaidyanathan", , "ramnath.vaidya@gmail.com", role = c("aut", "cph")),
     person(, "Association for Computing Machinery", role = c("aut", "cph")),
@@ -86,22 +86,22 @@ Description: A suite of custom R Markdown formats and templates for
 License: GPL-3
 URL: https://github.com/rstudio/rticles
 BugReports: https://github.com/rstudio/rticles/issues
-Imports: knitr (>= 1.30), rmarkdown (>= 2.14), tinytex (>= 0.30),
-        utils, xfun, yaml
-Suggests: bookdown, covr, testit, testthat (>= 3.0.0), xtable
+Imports: knitr (>= 1.30), lifecycle, rmarkdown (>= 2.14), tinytex (>=
+        0.30), utils, xfun, yaml
+Suggests: bookdown, withr, covr, testit, testthat (>= 3.0.0), xtable
 Config/Needs/website: magick, pdftools, gifski, tidyverse/tidytemplate,
         rstudio/quillt
 Config/testthat/edition: 3
 Encoding: UTF-8
-RoxygenNote: 7.2.1
+RoxygenNote: 7.2.3
 SystemRequirements: GNU make
 NeedsCompilation: no
-Packaged: 2022-08-25 15:49:33 UTC; chris
+Packaged: 2023-05-15 09:57:35 UTC; chris
 Author: JJ Allaire [aut],
   Yihui Xie [aut] (<https://orcid.org/0000-0003-0645-5666>),
   Christophe Dervieux [aut, cre]
     (<https://orcid.org/0000-0003-4474-2498>),
-  RStudio [cph, fnd],
+  Posit Software, PBC [cph, fnd],
   R Foundation [aut, cph],
   Hadley Wickham [aut],
   Journal of Statistical Software [aut, cph],
@@ -155,6 +155,6 @@ Author: JJ Allaire [aut],
   Dmytro Perepolkin [ctb] (<https://orcid.org/0000-0001-8558-6183>,
     dmi3kno),
   Tom Palmer [ctb] (<https://orcid.org/0000-0003-4655-4511>, remlapmot)
-Maintainer: Christophe Dervieux <cderv@rstudio.com>
+Maintainer: Christophe Dervieux <cderv@posit.co>
 Repository: CRAN
-Date/Publication: 2022-08-25 22:30:02 UTC
+Date/Publication: 2023-05-15 13:30:02 UTC
