@@ -1,3 +1,26 @@
+# rticles 0.26
+
+## MAJOR CHANGES
+
+- Update WileyNDJ template to V5 for `sim_article()`. This implies new resources files and new available options in template (thanks, @henrikibster, #545).
+
+## MINOR CHANGES
+
+- `elsevier_article()` Rmd skeleton is now updated to show different available bibliostyle file (i.e `*.bst` for _natbib_) with `elsearticle` document class. `biblio-style: elsarticle-harv` is set by default to correctly work with the `authoryear` classoption already set (thanks, @pepijn-devries, #545).
+
+- Update `ajs_article()` resources for the template.
+
+- Update `frontiers_article()` to version 3.4 from 2022. 
+  - New document class file (.cls) and new bibliography style file (.bst)
+  - LaTeX template is also updated
+  - The format is now only compatible with `natbib` citation processor when Pandoc 3.1.7+ is used, because Frontiers documentclass requires usage of `natbib` and it conflicts with pandoc Citeproc.
+
+- Update `mnras_article()` and `lncs_article()` to work with the Pandoc 3.1.7+ citeproc change.
+
+## BUG FIXES
+
+- Update Copernicus Publications template to version 7.5 from 2023-10-20 (@RLumSK, #551).
+
 # rticles 0.25
 
 ## BREAKING CHANGES

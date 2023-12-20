@@ -1,7 +1,7 @@
 Type: Package
 Package: rticles
 Title: Article Formats for R Markdown
-Version: 0.25
+Version: 0.26
 Authors@R: c(
     person("JJ", "Allaire", , "jj@posit.co", role = "aut"),
     person("Yihui", "Xie", , "xie@yihui.name", role = "aut",
@@ -88,7 +88,7 @@ URL: https://github.com/rstudio/rticles
 BugReports: https://github.com/rstudio/rticles/issues
 Imports: knitr (>= 1.30), lifecycle, rmarkdown (>= 2.14), tinytex (>=
         0.30), utils, xfun, yaml
-Suggests: bookdown, withr, covr, testit, testthat (>= 3.0.0), xtable
+Suggests: bookdown, withr, covr, testit, testthat (>= 3.2.0), xtable
 Config/Needs/website: magick, pdftools, gifski, tidyverse/tidytemplate,
         rstudio/quillt
 Config/testthat/edition: 3
@@ -96,7 +96,7 @@ Encoding: UTF-8
 RoxygenNote: 7.2.3
 SystemRequirements: GNU make
 NeedsCompilation: no
-Packaged: 2023-05-15 09:57:35 UTC; chris
+Packaged: 2023-12-20 15:12:53 UTC; chris
 Author: JJ Allaire [aut],
   Yihui Xie [aut] (<https://orcid.org/0000-0003-0645-5666>),
   Christophe Dervieux [aut, cre]
@@ -157,4 +157,4 @@ Author: JJ Allaire [aut],
   Tom Palmer [ctb] (<https://orcid.org/0000-0003-4655-4511>, remlapmot)
 Maintainer: Christophe Dervieux <cderv@posit.co>
 Repository: CRAN
-Date/Publication: 2023-05-15 13:30:02 UTC
+Date/Publication: 2023-12-20 16:30:02 UTC

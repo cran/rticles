@@ -86,7 +86,7 @@ elsevier_article(
   citation_package = "natbib"
 )
 
-frontiers_article(..., keep_tex = TRUE)
+frontiers_article(..., keep_tex = TRUE, citation_package = "natbib")
 
 glossa_article(..., keep_tex = TRUE, latex_engine = "xelatex")
 
@@ -147,7 +147,12 @@ pnas_article(..., keep_tex = TRUE)
 
 sage_article(..., highlight = NULL, citation_package = "natbib")
 
-sim_article(..., highlight = NULL, citation_package = "natbib")
+sim_article(
+  ...,
+  highlight = NULL,
+  citation_package = "natbib",
+  latex_engine = "xelatex"
+)
 
 springer_article(
   ...,
@@ -213,7 +218,7 @@ Economic Association (AER, AEJ, JEL, PP).
 \section{\code{agu_article}}{
  Format for creating a American Geophysical Union
 (AGU) article. Adapted from
-\url{https://www.agu.org/Publish-with-AGU/Publish/#1}.
+\url{https://www.agu.org/publish-with-agu/publish#1}.
 }
 
 \section{\code{amq_article}}{
@@ -260,7 +265,7 @@ function \code{ctex} is an alias of \code{ctex_article}.
 \section{\code{elsevier_article}}{
  Format for creating submissions to Elsevier
 journals. Adapted from
-\url{https://www.elsevier.com/authors/policies-and-guidelines/latex-instructions}.
+\url{https://www.elsevier.com/researcher/author/policies-and-guidelines/latex-instructions}.
 
 It requires a minimum version of 2.10 for Pandoc.
 }
@@ -410,8 +415,8 @@ journals.
 
 \section{\code{sage_article}}{
  Format for creating submissions to Sage
-Journals. Based on the official Sage Journals
-\verb{https://uk.sagepub.com/sites/default/files/sage_latex_template_4.zip}{class}.
+Journals. Based on the official Sage Journals Class.
+Available at \verb{https://uk.sagepub.com/sites/default/files/sage_latex_template_4.zip}.
 
 Possible arguments for the YAML header are:
 \itemize{
@@ -433,7 +438,9 @@ Possible arguments for the YAML header are:
 \section{\code{sim_article}}{
  Format for creating submissions to Statistics in
 Medicine. Based on the official Statistics in Medicine
-at \verb{https://onlinelibrary.wiley.com/page/journal/10970258/homepage/la_tex_class_file.htm}.
+at \verb{https://authorservices.wiley.com/author-resources/Journal-Authors/Prepare/new-journal-design.html}.
+
+This format uses xelatex by default as PDF engine to support the specific NJD fonts, per guideline.
 
 Possible arguments for the YAML header are:
 \itemize{
@@ -446,8 +453,9 @@ Possible arguments for the YAML header are:
 \item \code{received}, \code{revised}, \code{accepted} dates of submission, revision, and acceptance of the manuscript
 \item \code{abstract} abstract, limited to 250 words
 \item \code{keywords} up to 6 keywords
+\item \code{abbreviations}, list of abbreviations and description separated by a comma
 \item \code{bibliography} BibTeX \code{.bib} file
-\item \code{classoption} options of the \code{WileyNJD-v2} class
+\item \code{classoption} options of the \code{WileyNJD} class
 \item \code{longtable} set to \code{true} to include the \code{longtable} package, used by default from \code{pandoc} to convert markdown to LaTeX code
 \item \code{header-includes}: custom additions to the header, before the \verb{\\begin\{document\}} statement
 \item \code{include-after}: for including additional LaTeX code before the \verb{\\end\{document\}} statement
