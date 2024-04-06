@@ -1,3 +1,24 @@
+# rticles 0.27
+
+- `joss_article()` now correctly works as `base_format` for `bookdown::pdf_book()` (thanks, @mlysy, #564).
+
+- `oup_article()` now supports also `acknowledgments` in addition to `acknowledgements` as the original OUP LaTeX template (thanks, @dmkaplan2000, #563).
+
+- Update resources for `copernicus_article()` to version 7.8 from 18 March 2024 (@RLumSK) and fix issue #565 reported by @colinasmith
+
+- Update `tf_article()` template to latest bundle update from `InteractCADLaTeX` v1.04 - May 2023.
+  - `thanks: true` will now show the contact information will all authors. Use 
+    
+    ```yaml
+    thanks:
+      author:
+        - name: Author 1
+          email: email 1
+    ```
+    
+    to add specific authors.
+  - `biblio-style` is now supported. It is set by defauilt to `tfcad.bst` for `T&F standard Chicago author-date` style.
+
 # rticles 0.26
 
 ## MAJOR CHANGES
@@ -119,7 +140,7 @@
 
 ## BUG FIXES
 
-- `graphicx` LaTeX package has been added to `ieee_article()` format (thanks, Sachin Hebbar, [on RStudio Community](https://community.rstudio.com/t/inserting-figures-in-rticles-ieee-transaction-template/129325)).
+- `graphicx` LaTeX package has been added to `ieee_article()` format (thanks, Sachin Hebbar, [on RStudio Community](https://forum.posit.co/t/inserting-figures-in-rticles-ieee-transaction-template/129325)).
 
 # rticles 0.22
 

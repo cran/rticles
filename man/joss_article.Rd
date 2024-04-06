@@ -4,7 +4,13 @@
 \alias{joss_article}
 \title{Journal of Open Source Software (JOSS) format.}
 \usage{
-joss_article(journal = "JOSS", keep_md = TRUE, latex_engine = "xelatex", ...)
+joss_article(
+  journal = "JOSS",
+  keep_md = TRUE,
+  latex_engine = "xelatex",
+  pandoc_args = NULL,
+  ...
+)
 }
 \arguments{
 \item{journal}{one of "JOSS" or"JOSE"}
@@ -12,7 +18,12 @@ joss_article(journal = "JOSS", keep_md = TRUE, latex_engine = "xelatex", ...)
 \item{keep_md}{Whether to retain the intermediate markdown and images.
 Defaults to TRUE.}
 
-\item{latex_engine, ...}{Arguments passed to \code{\link[rmarkdown:pdf_document]{rmarkdown::pdf_document()}}}
+\item{latex_engine}{LaTeX engine for producing PDF output. Options are
+"pdflatex", "lualatex", "xelatex" and "tectonic".}
+
+\item{pandoc_args}{Additional command line options to pass to pandoc}
+
+\item{...}{Arguments passed to \code{\link[rmarkdown:pdf_document]{rmarkdown::pdf_document()}}}
 }
 \description{
 Format for creating a Journal of Open Source Software (JOSS) or Journal of

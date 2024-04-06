@@ -1,7 +1,7 @@
 Type: Package
 Package: rticles
 Title: Article Formats for R Markdown
-Version: 0.26
+Version: 0.27
 Authors@R: c(
     person("JJ", "Allaire", , "jj@posit.co", role = "aut"),
     person("Yihui", "Xie", , "xie@yihui.name", role = "aut",
@@ -84,7 +84,8 @@ Authors@R: c(
 Description: A suite of custom R Markdown formats and templates for
     authoring journal articles and conference submissions.
 License: GPL-3
-URL: https://github.com/rstudio/rticles
+URL: https://github.com/rstudio/rticles,
+        https://pkgs.rstudio.com/rticles/
 BugReports: https://github.com/rstudio/rticles/issues
 Imports: knitr (>= 1.30), lifecycle, rmarkdown (>= 2.14), tinytex (>=
         0.30), utils, xfun, yaml
@@ -93,10 +94,10 @@ Config/Needs/website: magick, pdftools, gifski, tidyverse/tidytemplate,
         rstudio/quillt
 Config/testthat/edition: 3
 Encoding: UTF-8
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.1
 SystemRequirements: GNU make
 NeedsCompilation: no
-Packaged: 2023-12-20 15:12:53 UTC; chris
+Packaged: 2024-04-06 20:51:20 UTC; chris
 Author: JJ Allaire [aut],
   Yihui Xie [aut] (<https://orcid.org/0000-0003-0645-5666>),
   Christophe Dervieux [aut, cre]
@@ -157,4 +158,4 @@ Author: JJ Allaire [aut],
   Tom Palmer [ctb] (<https://orcid.org/0000-0003-4655-4511>, remlapmot)
 Maintainer: Christophe Dervieux <cderv@posit.co>
 Repository: CRAN
-Date/Publication: 2023-12-20 16:30:02 UTC
+Date/Publication: 2024-04-06 23:50:02 UTC

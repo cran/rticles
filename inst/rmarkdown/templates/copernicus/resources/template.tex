@@ -182,6 +182,19 @@ $endif$
 %$header-includes$
 %$endfor$
 
+%% \usepackage commands included in the copernicus.cls:
+%\usepackage[german, english]{babel}
+%\usepackage{tabularx}
+%\usepackage{cancel}
+%\usepackage{multirow}
+%\usepackage{supertabular}
+%\usepackage{algorithmic}
+%\usepackage{algorithm}
+%\usepackage{amsthm}
+%\usepackage{float}
+%\usepackage{subfig}
+%\usepackage{rotating}
+
 \begin{document}
 
 $for(include-before)$
@@ -193,7 +206,7 @@ $endfor$
 
 
 $for(author)$
-\Author[$author.affiliation$]{$author.given_name$}{$author.surname$}
+\Author[$author.affiliation$]$if(author.corresponding)$[$author.email$]$endif${$author.given_name$}{$author.surname$}
 $endfor$
 
 
